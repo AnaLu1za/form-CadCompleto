@@ -120,4 +120,13 @@ loginForm.addEventListener('submit', (event) => {
         document.getElementById('cidade').value = endereco.localidade || '';
         document.getElementById('estado').value = endereco.uf || '';
     }
+
+    // Função para limpar os campos de endereço
+    const limparFormulario = () => {
+        document.getElementById('rua').value = '';
+        document.getElementById('bairro').value = '';
+        document.getElementById('cidade').value = '';
+        document.getElementById('estado').value = '';
+    }
+  
       
