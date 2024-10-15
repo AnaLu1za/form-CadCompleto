@@ -44,3 +44,15 @@ loginForm.addEventListener('submit', (event) => {
             CPFInput.focus();
         }
     });
+      
+    // Função de validação de CPF
+    function validarCPF(cpf) {
+        // Remove caracteres não numéricos
+        cpf = cpf.replace(/[^\d]+/g, '');
+  
+        if (cpf.length !== 11 || /^(\d)\1{10}$/.test(cpf)) {
+            return false;
+        }
+  
+        let soma = 0;
+        let resto;
