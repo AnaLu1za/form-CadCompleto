@@ -26,4 +26,21 @@ loginForm.addEventListener('submit', (event) => {
             return;
         }
     }
-});
+
+        // Verificação de E-mail válido
+        if (!checarEmail(emailInput)) {
+            event.preventDefault();
+            return; // Impede o envio do formulário caso o e-mail seja inválido
+        }
+  
+        // Verificação de CPF válido
+        if (!validarCPF(CPFInput.value)) {
+            event.preventDefault();
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "CPF inválido!",
+              });
+            CPFInput.focus();
+        }
+    });
