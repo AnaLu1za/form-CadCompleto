@@ -91,4 +91,25 @@ loginForm.addEventListener('submit', (event) => {
       
         return true;
     }
+
+    // Verifica o formato do e-mail
+    function checarEmail(emailInput) {
+        const emailValue = emailInput.value.trim();
+        
+        // Expressão regular para validar o formato do e-mail
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+        // Verifica se o e-mail está vazio ou no formato inválido
+        if (!emailRegex.test(emailValue)) {
+            Swal.fire({
+                icon: "info",
+                title: "Oops...",
+                text: "Por favor informe um email válido",
+              });
+            emailInput.focus(); // Coloca o foco no campo de e-mail
+            return false;
+        } else {
+            return true;
+        }
+    }
       
