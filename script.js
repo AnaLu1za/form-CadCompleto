@@ -112,4 +112,12 @@ loginForm.addEventListener('submit', (event) => {
             return true;
         }
     }
+    
+    // Função de autopreenchimento
+    const preencherFormulario = (endereco) => {
+        document.getElementById('rua').value = endereco.logradouro || '';
+        document.getElementById('bairro').value = endereco.bairro || '';
+        document.getElementById('cidade').value = endereco.localidade || '';
+        document.getElementById('estado').value = endereco.uf || '';
+    }
       
