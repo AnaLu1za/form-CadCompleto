@@ -129,4 +129,49 @@ loginForm.addEventListener('submit', (event) => {
         document.getElementById('estado').value = '';
     }
   
+    // Verifica se o CEP é válido
+    const eNumero = (numero) => /^[0-9]+$/.test(numero);
+    const cepValido = (CEP) => CEP.length === 8 && eNumero(CEP);
+  
+    const pesquisarCep = async () => {
+        const cep = CEPInput.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+        if (cepValido(cep)) {
+            limparFormulario();
+            const url = `https://viacep.com.br/ws/${cep}/json/`; // URL da API do ViaCEP com o CEP inserido
+  
+            try {
+                const dados = await fetch(url);
+                if (!dados.ok) {
+                    throw new Error('Erro ao buscar o CEP.');
+                }
+  
+                const address = await dados.json();
+  
+                if (address.erro) {
+                    Swal.fire({
+                        icon: "warning",
+                        title: "Oops...",
+                        text: "CEP não encontrado!",
+                      });
+                    limparFormulario();
+                } else {
+                    preencherFormulario(address);
+                }
+            } catch (error) {
+                console.error(error);
+                Swal.fire({
+                    icon: "info",
+                    title: "Oops...",
+                    text: "Ocorreu um erro ao buscar o CEP. Por favor, tente novamente!",
+                  });
+            }
+        } else {
+            Swal.fire({
+                icon: "info",
+                title: "Oops...",
+                text: "CEP não encontrado! informe o CEP de 8 dígitos",
+              });
+            limparFormulario();
+        }
+    }
       
