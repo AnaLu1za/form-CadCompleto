@@ -174,4 +174,6 @@ loginForm.addEventListener('submit', (event) => {
             limparFormulario();
         }
     }
-      
+
+    // Executa a ação de preenchimento do formulário ao deixar o campo CEP
+    CEPInput.addEventListener('focusout', pesquisarCep); 
