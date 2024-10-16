@@ -48,6 +48,10 @@ Os projetos abaixo contém todo o embasamento deste projeto e as explicações d
 
 - Esta documentação detalha a estrutura, funcionalidades e tecnologias utilizadas no projeto, servindo como um guia para desenvolvedores e usuários interessados em entender ou modificar o sistema de cadastro.
 
+
+![miau.gif](https://steemitimages.com/DQmZCo76MUSeg8WNYUqr9UMGig3kufJWfENY337KfSbpoJC/miau.gif)
+
+
 ## Técnicas e tecnologias utilizadas
 * [<code><img height="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" alt="HTML5"/></code>](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 * [<code><img height="32" src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="CSS3"/></code>](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
