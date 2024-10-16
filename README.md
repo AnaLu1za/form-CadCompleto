@@ -1,47 +1,52 @@
-# Tela de Login - Validação com JavaScript
-Este repositório contém o código para um projeto de login e recuperação de senha completo com interfaces HTML, CSS e JavaScript. O objetivo é criar um sistema de autenticação básico para um site ou aplicativo web.
-
+# Tela de Cadastro - Validações com JavaScript
 
 ## Índice
 * [Descrição](#descrição)
+* [Arquitetura do Código](#arquitetura-do-código)
+* [Responsividade](#responsividade)
+* [Projetos base](#projetos-base)
 * [Introdução](#introdução)
 * [Funcionalidades](#funcionalidades)
 * [Técnicas e tecnologias utilizadas](#técnicas-e-tecnologias-utilizadas)
 * [Fontes Consultadas](#fontes-consultadas)
-
+* [Colaboradores](#colaboradores)
+* [Autor(a)](#autora)
 
 ## Descrição
-* Este arquivo HTML representa a estrutura básica de uma tela de login. Ele exibe uma tela de login com três campos fundamentais para o acesso a qualquer tipo de site, pedindo nome, e-mail e senha.
+Este projeto consiste em um formulário de cadastro de usuário que coleta informações pessoais e de endereço. O objetivo é fornecer uma interface amigável e funcional para novos usuários se registrarem em uma aplicação. O formulário valida os dados inseridos, incluindo e-mail e CPF, garantindo que as informações sejam corretas antes de serem enviadas.
 
-![Tela de Login](img/Gravando-2024-04-25-105629_1.gif)
+![Tela de Cadastro](img/Cadastro%20completo.PNG)
+
+### Arquitetura do Código
+- HTML ``(index.html):`` A estrutura básica do formulário, onde os campos são definidos e organizados em grupos de informações pessoais e de endereço. Inclui elementos de interface como ícones e placeholders para guiar o usuário.
+
+- CSS ``(style.css)``: Estilização da página, utilizando variáveis para cores e estilos, garantindo uma apresentação visual agradável e responsiva. Estilos são aplicados a diferentes elementos, como o formulário, botões e campos de entrada.
+
+- JavaScript ``(script.js)``: Implementação da lógica de validação do formulário. 
+
+   **Inclui:**
+    - Validação de campos obrigatórios.
+    - Verificação do formato de e-mail.
+    - Validação do CPF, garantindo que seja um número válido.
+    - Autopreenchimento de campos de endereço a partir do CEP usando a API do ViaCEP.
+
+### Responsividade
+O design é responsivo, garantindo que o formulário se adapte a diferentes tamanhos de tela, proporcionando uma boa experiência tanto em dispositivos móveis quanto em desktops.
+
+## Projetos base: 
+Os projetos abaixo contém todo o embasamento deste projeto e as explicações dos códigos utilizados.
+- [Formulário de Cadastro de Endereço](https://github.com/AnaLu1za/form-CadEndereco)
+- [Tela de Login](https://github.com/AnaLu1za/tela-login)
+- [Validações em JavaScript](https://github.com/AnaLu1za/validacoes-javascript)
 
 ## Introdução
-* Seja bem-vindo a tela de login! Este projeto demonstra a estrutura básica de uma tela de login em HTML e CSS, com um sistema de autenticação desenvolvido co JavaScript. 
+- Esta documentação apresenta o projeto de um formulário de cadastro de usuário, desenvolvido para facilitar a coleta de informações pessoais e de endereço de novos usuários em uma aplicação. O formulário é projetado para ser intuitivo e responsivo, proporcionando uma experiência de usuário agradável tanto em dispositivos móveis quanto em desktops.
 
-**A estrutura do projeto:**
-- ``index.html:`` Página inicial para login com formulário e ida para página de recuperação de senha.
+- O projeto utiliza HTML para a estrutura do formulário, CSS para a estilização e JavaScript para implementar funcionalidades dinâmicas, como validação de dados e autopreenchimento de campos de endereço. Além disso, integra a API do ViaCEP para facilitar a inserção de informações de localização, melhorando a usabilidade.
 
-![tela-login](img/login.png)
+- A validação rigorosa dos campos, incluindo e-mail e CPF, assegura que os dados coletados sejam precisos e completos. Alertas visuais são fornecidos através da biblioteca SweetAlert, informando os usuários sobre quaisquer erros ou necessidades de correção.
 
-- ``recuperacao-senha.html:`` Tela de recuperação de senha com formulário.
-
-![rec-senha](img/rec-senha.png)
-
-- ``style.css:`` Arquivo principal de estilos CSS.
-- ``script.js:`` Arquivo principal de JavaScript com as função de validação.
-
-**O que você pode fazer:**
-- Adaptar o projeto de acordo com suas necessidades específicas.
-
-
-## Funcionalidades
-- Tela de login com campos para usuário e senha.
-- Validação básica de login (verifica se os campos não estão vazios).
-- Link para a página de recuperação de senha.
-- Tela de recuperação de senha com campo para e-mail.
-- Validação básica de e-mail (formato simples).
-- Mensagens de feedback para o usuário (alertas).
-
+- Esta documentação detalha a estrutura, funcionalidades e tecnologias utilizadas no projeto, servindo como um guia para desenvolvedores e usuários interessados em entender ou modificar o sistema de cadastro.
 
 ## Técnicas e tecnologias utilizadas
 * [<code><img height="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" alt="HTML5"/></code>](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
@@ -64,6 +69,9 @@ Este repositório contém o código para um projeto de login e recuperação de 
 * [HomeHost](https://www.homehost.com.br/blog/tutoriais/html-buttton/)
 * [W3schools](https://www.w3schools.com/js/js_window_location.asp)
 
+## Colaboradores 
+|  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/140712280?v=4" width=115><br><sub>Fellipe Zanin</sub>](https://github.com/Fell1pe) |  
+| :---: |
 
 ## Autor(a)
 |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/140712281?v=4" width=115><br><sub>Ana Santos</sub>](https://github.com/AnaLu1za) |  
