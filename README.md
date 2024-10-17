@@ -1,4 +1,5 @@
 # Tela de Cadastro - Validações com JavaScript
+Este projeto implementa um formulário de cadastro para coletar informações pessoais e de endereço dos usuários. O formulário é responsivo e inclui validações de entrada, integração com a API ViaCEP para preencher automaticamente campos de endereço com base no CEP fornecido, e feedback ao usuário através de mensagens de alerta. 
 
 ## Índice
 * [Descrição](#descrição)
@@ -50,6 +51,23 @@ Os projetos abaixo contém todo o embasamento deste projeto e as explicações d
 
 ![miau.gif](https://steemitimages.com/DQmZCo76MUSeg8WNYUqr9UMGig3kufJWfENY337KfSbpoJC/miau.gif)
 
+## Informações Pessoais
+![](img/InfoPessoais.png)
+
+### Como o JavaScript age?
+- **Validação de Campos:** Ao submeter o formulário, um evento é acionado que verifica se todos os campos obrigatórios estão preenchidos. Isso é feito através de um loop que checa cada campo listado em ``requiredFields``. Se algum campo estiver vazio, a submissão é cancelada e um alerta é exibido.
+
+- **Verificação de Email e CPF:** Após a verificação de preenchimento, são chamadas as funções ``checarEmail`` e ``validarCPF`` para validar, respectivamente, o formato do e-mail e a integridade do CPF. Se qualquer um desses não for válido, a submissão do formulário é impedida, e um feedback é dado ao usuário.
+
+## Formulário de Endereço
+![](img/FormEndereco.png)
+
+### Como o JavaScript age?
+- **Validação do CEP:** A função ``cepValido`` verifica se o CEP possui exatamente 8 dígitos numéricos. Esta validação é crucial para garantir que a busca na API seja feita corretamente.
+
+- **Pesquisa do CEP:** A função ``pesquisarCep`` é acionada quando o campo de CEP perde o foco. Se o CEP for válido, ela limpa os campos de endereço e faz uma requisição à API ViaCEP. A resposta da API é processada e, se o CEP for encontrado, os campos de endereço são preenchidos automaticamente usando a função ``preencherFormulario``.
+
+- **Tratamento de Erros:** O código inclui tratamento de erros para lidar com situações em que o CEP não é encontrado ou se a requisição falha. Mensagens de feedback são exibidas ao usuário para melhorar a experiência.
 
 ## Técnicas e tecnologias utilizadas
 * [<code><img height="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" alt="HTML5"/></code>](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
