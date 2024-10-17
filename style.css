@@ -32,7 +32,7 @@
     padding: 20px;
 }
 
-#login_form {
+#login-form {
     background-color: var(--color-light-50);
     display: flex;
     flex-direction: column;
@@ -45,13 +45,13 @@
     animation: fade-in 0.5s ease-in-out;
 }
 
-#form_header {
+#form-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#form_header h1 {
+#form-header h1 {
     font-size: 28px;
     color: var(--color-dark-100);
 }
