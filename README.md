@@ -15,7 +15,7 @@
 ## Descrição
 Este projeto consiste em um formulário de cadastro de usuário que coleta informações pessoais e de endereço. O objetivo é fornecer uma interface amigável e funcional para novos usuários se registrarem em uma aplicação. O formulário valida os dados inseridos, incluindo e-mail e CPF, garantindo que as informações sejam corretas antes de serem enviadas.
 
-![Tela de Cadastro](img/Cadastro%20completo.PNG)
+![Tela de Cadastro](img/CadCompleto.gif)
 
 ### Arquitetura do Código
 - HTML ``(index.html):`` A estrutura básica do formulário, onde os campos são definidos e organizados em grupos de informações pessoais e de endereço. Inclui elementos de interface como ícones e placeholders para guiar o usuário.
@@ -47,7 +47,6 @@ Os projetos abaixo contém todo o embasamento deste projeto e as explicações d
 - A validação rigorosa dos campos, incluindo e-mail e CPF, assegura que os dados coletados sejam precisos e completos. Alertas visuais são fornecidos através da biblioteca SweetAlert, informando os usuários sobre quaisquer erros ou necessidades de correção.
 
 - Esta documentação detalha a estrutura, funcionalidades e tecnologias utilizadas no projeto, servindo como um guia para desenvolvedores e usuários interessados em entender ou modificar o sistema de cadastro.
-
 
 ![miau.gif](https://steemitimages.com/DQmZCo76MUSeg8WNYUqr9UMGig3kufJWfENY337KfSbpoJC/miau.gif)
 
