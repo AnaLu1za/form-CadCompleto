@@ -7,7 +7,6 @@ Este projeto implementa um formulário de cadastro para coletar informações pe
 * [Responsividade](#responsividade)
 * [Projetos base](#projetos-base)
 * [Introdução](#introdução)
-* [Funcionalidades](#funcionalidades)
 * [Técnicas e tecnologias utilizadas](#técnicas-e-tecnologias-utilizadas)
 * [Fontes Consultadas](#fontes-consultadas)
 * [Colaboradores](#colaboradores)
